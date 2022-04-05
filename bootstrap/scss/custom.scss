@@ -347,6 +347,12 @@ ul {
   }
 }
 
+#faqs{
+  .accordion-fix-body{
+    min-height: 400px;
+  }
+}
+
 #news {
   .box {
     color: white;
@@ -546,10 +552,23 @@ footer {
     margin-top: 10vh !important;
     #boxes {
       .box {
-        &.active {
+        .icon{
+          svg{
+            stroke: #fff;
+            transition: all 0.2s ease-in-out;
+            width: 32px;
+            height: 32px;
+          }
+        }
+        &:hover {
           background-color: white;
           color: var(--bs-water);
           box-shadow: 0 3px 86px rgba($color: #000000, $alpha: 0.16);
+          .icon{
+            svg{
+              stroke: #1BC4EB;
+            }
+          }
         }
       }
     }
